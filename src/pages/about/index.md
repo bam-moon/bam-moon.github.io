@@ -16,7 +16,6 @@ type: "about"
 我期待在这里与你分享我的见解、经验和最新的技术动态。
 :::
 
-
 **在 Web 开发方面**，我深耕 Vue.js 生态，并且关注了现代 CSS 框架如 Tailwind CSS。同时，对前端构建工具如 Webpack、Rollup 和 Vite 以及代码质量和规范工具如 ESLint 进行了研究，我还关注了前端性能优化，例如代码分割、资源加载策略以及 Astro、Hexo 等现代网站构建工具的使用。
 
 **在后端开发和云计算领域**，我对 Node.js 生态系统非常熟悉，并积极探索 Serverless 架构。我长期使用 Cloudflare Workers、Vercel 和腾讯云 EdgeOne 等平台，优化边缘计算、KV 存储和全球 CDN 加速方案，确保应用的高可用性和低延迟。
@@ -75,15 +74,34 @@ type: "about"
 
 ```js
 const Han = class {
-	constructor() {
-		const Hello = [123, 34, 110, 97, 109, 101, 34, 58, 34, 72, 97, 110, 34, 44, 34, 101, 109, 97, 105, 108, 34, 58, 34, 49, 54];
-		const EveryOne = [53, 53, 52, 54, 54, 51, 56, 55, 64, 113, 113, 46, 99, 111, 109, 34, 44, 34, 81, 81, 34, 58, 49, 54, 53, 53];
-		const WelcomeTo = [52, 54, 54, 51, 56, 55, 44, 34, 119, 101, 99, 104, 97, 116, 34, 58, 49, 54, 53, 53, 52, 54, 54, 51, 56, 55];
-		const MineBlog = [44, 34, 98, 105, 114, 116, 104, 34, 58, 49, 57, 57, 56, 44, 34, 115, 101, 120, 34, 58, 34, 30007, 34, 125];
-		const AboutMe = JSON.parse(String.fromCharCode.apply(null, [...Hello, ...EveryOne, ...WelcomeTo, ...MineBlog]));
-		AboutMe.age = new Date().getFullYear() - AboutMe.birth;
-		console.log(AboutMe);
-	}
+  constructor() {
+    const Hello = [
+      123, 34, 110, 97, 109, 101, 34, 58, 34, 72, 97, 110, 34, 44, 34, 101, 109,
+      97, 105, 108, 34, 58, 34, 49, 54,
+    ];
+    const EveryOne = [
+      53, 53, 52, 54, 54, 51, 56, 55, 64, 113, 113, 46, 99, 111, 109, 34, 44,
+      34, 81, 81, 34, 58, 49, 54, 53, 53,
+    ];
+    const WelcomeTo = [
+      52, 54, 54, 51, 56, 55, 44, 34, 119, 101, 99, 104, 97, 116, 34, 58, 49,
+      54, 53, 53, 52, 54, 54, 51, 56, 55,
+    ];
+    const MineBlog = [
+      44, 34, 98, 105, 114, 116, 104, 34, 58, 49, 57, 57, 56, 44, 34, 115, 101,
+      120, 34, 58, 34, 30007, 34, 125,
+    ];
+    const AboutMe = JSON.parse(
+      String.fromCharCode.apply(null, [
+        ...Hello,
+        ...EveryOne,
+        ...WelcomeTo,
+        ...MineBlog,
+      ])
+    );
+    AboutMe.age = new Date().getFullYear() - AboutMe.birth;
+    console.log(AboutMe);
+  }
 };
 new Han();
 ```

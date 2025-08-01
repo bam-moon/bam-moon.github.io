@@ -17,7 +17,7 @@ export default {
   // Cover 网站缩略图
   Cover: "/assets/images/banner/072c12ec85d2d3b5.webp",
   // 网站侧边栏公告 (不填写即不开启)
-  Tips: "<p>欢迎光临我的博客 🎉</p><p>这里会分享我的日常和学习中的收集、整理及总结，希望能对你有所帮助:) 💖</p>",
+  Tips: "<p>欢迎光临我的博客 🎉</p><p>这里会分享我的日常和学习中的收集、整理及总结，希望能对你有所帮助 💖</p>",
   // 首页打字机文案列表
   TypeWriteList: [
     "如果花开的时候就想着终将花落，那开花就成了悲剧的一环.",
@@ -29,12 +29,12 @@ export default {
   HomeBanner: {
     enable: true,
     // 首页高度
-    HomeHeight: "38.88rem",
+    HomeHeight: "20.88rem",
     // 其他页面高度
-    PageHeight: "28.88rem",
+    PageHeight: "15.88rem",
     // 背景
     background:
-      "url('/assets/images/home-banner.webp') no-repeat center 30%/cover",
+      "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
@@ -55,11 +55,11 @@ export default {
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
     { text: "文章", link: "/archives", icon: "Nav_archives" },
-    { text: "朋友", link: "/links", icon: "Nav_friends" },
+    { text: "本人", link: "/about", icon: "Nav_about" },
     { text: "圈子", link: "/friends", icon: "Nav_rss" },
     { text: "动态", link: "/talking", icon: "Nav_talking" },
     { text: "留言", link: "/message", icon: "Nav_message" },
-    { text: "本人", link: "/about", icon: "Nav_about" },
+    { text: "友链", link: "/links", icon: "Nav_friends" },
   ],
   // 侧边栏个人网站
   WebSites: [

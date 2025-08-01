@@ -9,7 +9,7 @@ aside.vh-aside {
   width: var(--vh-aside-width);
   height: auto;
 
-  &>.sticky-aside {
+  & > .sticky-aside {
     position: -webkit-sticky;
     position: sticky;
     top: calc(66px + 1rem);
@@ -36,7 +36,7 @@ aside.vh-aside {
     box-shadow: var(--vh-box-shadow);
     overflow: hidden;
 
-    &>h3 {
+    & > h3 {
       width: 100%;
       font-size: 0.68rem;
       font-weight: 400;
@@ -47,7 +47,7 @@ aside.vh-aside {
     &.user {
       padding: 1.88rem 0;
 
-      &>.vh-aside-avatar {
+      & > .vh-aside-avatar {
         position: relative;
         width: 6.36rem;
         height: 6.36rem;
@@ -55,12 +55,12 @@ aside.vh-aside {
         overflow: hidden;
       }
 
-      &>.vh-aside-auther {
+      & > .vh-aside-auther {
         position: relative;
         font-size: 1.25rem;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           display: block;
           bottom: -0.16rem;
@@ -73,19 +73,19 @@ aside.vh-aside {
         }
       }
 
-      &>.vh-aside-motto {
+      & > .vh-aside-motto {
         font-size: 0.86rem;
         color: var(--vh-font-66);
         line-height: 1.5;
         text-align: center;
       }
 
-      &>.vh-aside-links {
+      & > .vh-aside-links {
         display: flex;
         align-items: center;
         gap: 0.5rem;
 
-        &>.vh-aside-links-item {
+        & > .vh-aside-links-item {
           position: relative;
           display: flex;
           align-items: center;
@@ -108,7 +108,7 @@ aside.vh-aside {
           }
 
           &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             bottom: 0;
@@ -119,7 +119,7 @@ aside.vh-aside {
             z-index: -1;
           }
 
-          &>svg {
+          & > svg {
             width: auto;
             height: 1.18rem;
             object-fit: contain;
@@ -128,7 +128,7 @@ aside.vh-aside {
         }
       }
 
-      &>.vh-aside-info {
+      & > .vh-aside-info {
         box-sizing: border-box;
         padding: 0 1rem;
         display: grid;
@@ -136,7 +136,7 @@ aside.vh-aside {
         width: 100%;
         height: max-content;
 
-        &>.count {
+        & > .count {
           box-sizing: border-box;
           padding: 0.88rem 0 0.66rem;
           display: flex;
@@ -154,19 +154,19 @@ aside.vh-aside {
             z-index: 1;
           }
 
-          &>span {
+          & > span {
             font-size: 1.05rem;
             color: var(--vh-font-color);
           }
 
-          &>p {
+          & > p {
             font-size: 0.8rem;
             color: var(--vh-font-56);
           }
         }
       }
 
-      &>.vh-aside-canvas {
+      & > .vh-aside-canvas {
         position: absolute;
         left: 0;
         top: 0;
@@ -182,14 +182,14 @@ aside.vh-aside {
     &.tips {
       align-items: flex-start;
 
-      &>span {
+      & > span {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 0.288rem;
         font-size: 1rem;
 
-        &>svg {
+        & > svg {
           margin-bottom: 0.188rem;
           color: var(--vh-main-color);
           width: 1.18rem;
@@ -199,7 +199,7 @@ aside.vh-aside {
         }
       }
 
-      &>.tips-content {
+      & > .tips-content {
         font-size: 0.88rem;
 
         p {
@@ -214,7 +214,7 @@ aside.vh-aside {
 
     // 分类
     &.cat {
-      &>.vh-aside-cat {
+      & > .vh-aside-cat {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -223,7 +223,7 @@ aside.vh-aside {
         overflow-x: hidden;
         overflow-y: auto;
 
-        &>a {
+        & > a {
           flex-shrink: 0;
           box-sizing: border-box;
           display: flex;
@@ -242,12 +242,12 @@ aside.vh-aside {
             background-color: var(--vh-main-color-66);
             color: var(--vh-white-color);
 
-            &>i {
+            & > i {
               background-color: transparent;
             }
           }
 
-          &>i {
+          & > i {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -267,7 +267,7 @@ aside.vh-aside {
 
     // 标签
     &.tags {
-      &>.vh-aside-tags {
+      & > .vh-aside-tags {
         display: flex;
         flex-wrap: wrap;
         gap: 0.68rem 1rem;
@@ -277,7 +277,7 @@ aside.vh-aside {
         overflow-x: hidden;
         overflow-y: auto;
 
-        &>a {
+        & > a {
           display: flex;
           align-items: center;
           gap: 0.18rem;
@@ -285,12 +285,12 @@ aside.vh-aside {
           height: max-content;
 
           &:hover {
-            &>span {
+            & > span {
               color: var(--vh-main-color);
             }
           }
 
-          &>span {
+          & > span {
             box-sizing: border-box;
             width: max-content;
             font-size: 0.8rem;
@@ -299,7 +299,7 @@ aside.vh-aside {
             overflow: hidden;
           }
 
-          &>em {
+          & > em {
             // display: none;
             color: var(--vh-font-28);
             font-size: 0.688rem;
@@ -311,7 +311,7 @@ aside.vh-aside {
 
     // 推荐文章
     &.articles {
-      &>.vh-aside-articles {
+      & > .vh-aside-articles {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -319,7 +319,7 @@ aside.vh-aside {
         height: max-content;
         overflow: hidden;
 
-        &>a {
+        & > a {
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
@@ -329,8 +329,8 @@ aside.vh-aside {
           overflow: hidden;
 
           &:hover {
-            &>span {
-              &>cite {
+            & > span {
+              & > cite {
                 color: var(--vh-main-color);
 
                 &::after {
@@ -341,29 +341,29 @@ aside.vh-aside {
           }
 
           &:nth-of-type(2) {
-            &>span {
-              &>i {
+            & > span {
+              & > i {
                 background-color: var(--vh-warning);
               }
             }
           }
 
           &:nth-of-type(3) {
-            &>span {
-              &>i {
+            & > span {
+              & > i {
                 background-color: var(--vh-import);
               }
             }
           }
 
-          &>span {
+          & > span {
             box-sizing: border-box;
             display: flex;
             align-items: center;
             gap: 0.618rem;
             width: 100%;
 
-            &>cite {
+            & > cite {
               width: max-content;
               max-width: 100%;
               border-bottom: 1px solid transparent;
@@ -373,16 +373,16 @@ aside.vh-aside {
               transition: color 0.288s ease-in-out;
 
               &::after {
-                content: '';
+                content: "";
                 display: block;
                 width: 0;
                 height: 1px;
                 background-color: var(--vh-main-color);
-                transition: width 0.58s cubic-bezier(.6, .1, 0, 1);
+                transition: width 0.58s cubic-bezier(0.6, 0.1, 0, 1);
               }
             }
 
-            &>i {
+            & > i {
               flex-shrink: 0;
               width: 0.875rem;
               height: 0.875rem;
@@ -394,7 +394,7 @@ aside.vh-aside {
               background-color: var(--vh-success);
             }
 
-            &>em {
+            & > em {
               flex-shrink: 0;
               width: max-content;
               font-style: normal;
@@ -403,17 +403,15 @@ aside.vh-aside {
             }
           }
 
-          &>time {
+          & > time {
             color: var(--vh-font-56);
             font-size: 0.688rem;
           }
-
         }
       }
     }
   }
 }
-
 
 @media screen and (max-width: 888px) {
   aside.vh-aside {

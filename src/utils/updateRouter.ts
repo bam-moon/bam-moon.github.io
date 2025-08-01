@@ -12,6 +12,9 @@ const inRouter = (handler: EventHandler) => {
   window.swup ? setup() : document.addEventListener("swup:enable", setup);
 };
 // 离开当前页面时触发
-const outRouter = (handler: EventHandler) => window.swup ? window.swup.hooks.on("visit:start", handler) : document.addEventListener("swup:enable", () => outRouter(handler));
+const outRouter = (handler: EventHandler) =>
+  window.swup
+    ? window.swup.hooks.on("visit:start", handler)
+    : document.addEventListener("swup:enable", () => outRouter(handler));
 
 export { inRouter, outRouter };

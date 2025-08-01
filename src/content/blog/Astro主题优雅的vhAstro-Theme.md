@@ -25,14 +25,14 @@ top: true
 
 ## 项目地址
 
-> 1、QQ 群下载：113445803 <br>2、GitHub 下载（推荐）：https://github.com/uxiaohan/vhAstro-Theme （谢谢你的star）
+> 1、QQ 群下载：113445803 <br>2、GitHub 下载（推荐）：https://github.com/uxiaohan/vhAstro-Theme （谢谢你的 star）
 
 ## ✨ 功能特性
 
 - [x] 简洁的响应式设计
 - [x] 流畅的动画和页面过渡
 - [x] 丝滑的阻尼滚动效果
-- [x] 顶部Banner
+- [x] 顶部 Banner
 - [x] 两列布局
 - [x] 阅读时间
 - [x] 字数统计
@@ -130,23 +130,23 @@ pnpm newpost '文章标题'
 ```js
 // 配置文件 src/page_data/Link.ts
 export default {
-	// API 接口请求优先，数据格式保持和 data 一致
-	api: "",
-	// api 为空则使用 data 静态数据
-	data: [
-		{
-			name: "韩小韩博客",
-			link: "https://www.vvhan.com",
-			avatar: "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
-			descr: "运气是计划之外的东西."
-		},
-		{
-			name: "韩小韩API",
-			link: "https://api.vvhan.com",
-			avatar: "https://api.vvhan.com/static/images/logo.webp",
-			descr: "免费Web API数据接口调用服务平台."
-		}
-	]
+  // API 接口请求优先，数据格式保持和 data 一致
+  api: "",
+  // api 为空则使用 data 静态数据
+  data: [
+    {
+      name: "韩小韩博客",
+      link: "https://www.vvhan.com",
+      avatar: "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
+      descr: "运气是计划之外的东西.",
+    },
+    {
+      name: "韩小韩API",
+      link: "https://api.vvhan.com",
+      avatar: "https://api.vvhan.com/static/images/logo.webp",
+      descr: "免费Web API数据接口调用服务平台.",
+    },
+  ],
 };
 ```
 
@@ -155,57 +155,61 @@ export default {
 ```js
 // 配置文件 src/page_data/Talking.ts
 export default {
-	// API 接口请求优先，数据格式保持和 data 一致
-	api: "",
-	// api 为空则使用 data 静态数据
-	// 注意：图片请用 vh-img-flex 类包裹
-	data: [
-		{
-			date: "2025-02-12 19:36:16",
-			tags: ["树", "夕阳"],
-			content: '好美🌲<p class="vh-img-flex"><img src="https://i0.wp.com/shp.qpic.cn/collector/1655466387/937ec070-8448-4c7b-9c8b-abd41ce892cb/0"></p>'
-		},
-		{
-			date: "2024-10-05 16:16:06",
-			tags: ["日常"],
-			content: "记录第一条说说"
-		}
-	]
+  // API 接口请求优先，数据格式保持和 data 一致
+  api: "",
+  // api 为空则使用 data 静态数据
+  // 注意：图片请用 vh-img-flex 类包裹
+  data: [
+    {
+      date: "2025-02-12 19:36:16",
+      tags: ["树", "夕阳"],
+      content:
+        '好美🌲<p class="vh-img-flex"><img src="https://i0.wp.com/shp.qpic.cn/collector/1655466387/937ec070-8448-4c7b-9c8b-abd41ce892cb/0"></p>',
+    },
+    {
+      date: "2024-10-05 16:16:06",
+      tags: ["日常"],
+      content: "记录第一条说说",
+    },
+  ],
 };
 ```
 
-### 圈子（需部署FreshRSS）
+### 圈子（需部署 FreshRSS）
 
 ```js
 // 配置文件 src/page_data/Friends.ts
 export default {
   // API 接口请求优先，数据格式保持和 data 一致
-  api: '',
+  api: "",
   // api 为空则使用 data 静态数据
   data: [
     {
-      "title": "Astro 中使用 Lenis 增加鼠标滚动阻尼感",
-      "auther": "韩小韩博客",
-      "date": "2025-03-06",
-      "link": "https://www.vvhan.com/article/Lenis-in-Astro",
-      "content": "在移动端触控交互中，惯性滚动带来的丝滑体验已成为标配，但鼠标滚轮受限于机械结构，滚动时难免产生生硬的段落感。如何让传统滚轮操作也能获得如触控板般的阻尼反馈？Lenis库通过JavaScript模拟惯性算法，成功将”物理惯性”引入网页滚动，本文将解析其实现原理与实战应用。"
+      title: "Astro 中使用 Lenis 增加鼠标滚动阻尼感",
+      auther: "韩小韩博客",
+      date: "2025-03-06",
+      link: "https://www.vvhan.com/article/Lenis-in-Astro",
+      content:
+        "在移动端触控交互中，惯性滚动带来的丝滑体验已成为标配，但鼠标滚轮受限于机械结构，滚动时难免产生生硬的段落感。如何让传统滚轮操作也能获得如触控板般的阻尼反馈？Lenis库通过JavaScript模拟惯性算法，成功将”物理惯性”引入网页滚动，本文将解析其实现原理与实战应用。",
     },
     {
-      "title": "Astro 添加 Twikoo 评论组件",
-      "auther": "韩小韩博客",
-      "date": "2025-03-03",
-      "link": "https://www.vvhan.com/article/astro-twikoo",
-      "content": "Astro在使用视图过渡路由时，在跳转路由时，会导致JS文件只有在第一次进入页面时生效，所以Astro在使用视图过渡路由下Twikoo时无法正常使用的，我是单独写了一个评论组件，对Twikoo进行动态加载，然后在需要评论的页面引入的。"
+      title: "Astro 添加 Twikoo 评论组件",
+      auther: "韩小韩博客",
+      date: "2025-03-03",
+      link: "https://www.vvhan.com/article/astro-twikoo",
+      content:
+        "Astro在使用视图过渡路由时，在跳转路由时，会导致JS文件只有在第一次进入页面时生效，所以Astro在使用视图过渡路由下Twikoo时无法正常使用的，我是单独写了一个评论组件，对Twikoo进行动态加载，然后在需要评论的页面引入的。",
     },
     {
-      "title": "Astro主题-优雅的vhAstro-Theme【使用文档】",
-      "auther": "韩小韩博客",
-      "date": "2025-03-02",
-      "link": "https://www.vvhan.com/article/astro-theme-vhastro-theme",
-      "content": "🥝从Z-Blog到Emlog，从Typecho到Hexo，从动态博客到静态博客，作为一个前端，我深入了解了多种SSG工具，如Hexo、Vitepress、Hugo等，并最终锁定了Astro作为重构博客的选择。🍇Astro活跃的社区支持、广泛的现代框架兼容性、高效的性能优化、优秀的开发体验。"
-    }
-  ]
-}
+      title: "Astro主题-优雅的vhAstro-Theme【使用文档】",
+      auther: "韩小韩博客",
+      date: "2025-03-02",
+      link: "https://www.vvhan.com/article/astro-theme-vhastro-theme",
+      content:
+        "🥝从Z-Blog到Emlog，从Typecho到Hexo，从动态博客到静态博客，作为一个前端，我深入了解了多种SSG工具，如Hexo、Vitepress、Hugo等，并最终锁定了Astro作为重构博客的选择。🍇Astro活跃的社区支持、广泛的现代框架兼容性、高效的性能优化、优秀的开发体验。",
+    },
+  ],
+};
 ```
 
 ## 📄 文章格式
@@ -229,7 +233,6 @@ type: "links" # 页面类型
 comment: false # 关闭页面评论（默认开启）
 ---
 ```
-
 
 ## ✅ Lighthouse
 
@@ -275,42 +278,45 @@ comment: false # 关闭页面评论（默认开启）
 ```
 
 ## ⚙️ 项目配置
+
 ```js
 export default {
   // 网站标题
-  Title: '韩小韩博客',
+  Title: "韩小韩博客",
   // 网站地址
-  Site: 'https://www.vvhan.com',
+  Site: "https://www.vvhan.com",
   // 网站副标题
-  Subtitle: '不曾与你分享的时间,我在进步.',
+  Subtitle: "不曾与你分享的时间,我在进步.",
   // 网站描述
-  Description: '韩小韩博客 专注于前开发与相关技术的实战分享，涵盖Vue框架、Node.js、Serverless等，并涉及Node、Python、Linux、Docker等领域。同时，博客也分享作者的生活、音乐和旅行的热爱。',
+  Description:
+    "韩小韩博客 专注于前开发与相关技术的实战分享，涵盖Vue框架、Node.js、Serverless等，并涉及Node、Python、Linux、Docker等领域。同时，博客也分享作者的生活、音乐和旅行的热爱。",
   // 网站作者
-  Author: '.𝙃𝙖𝙣',
+  Author: ".𝙃𝙖𝙣",
   // 作者头像
-  Avatar: 'https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640',
+  Avatar: "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
   // 网站座右铭
-  Motto: '运气是计划之外的东西.',
+  Motto: "运气是计划之外的东西.",
   // Cover 网站缩略图
-  Cover: '/assets/images/banner/072c12ec85d2d3b5.webp',
+  Cover: "/assets/images/banner/072c12ec85d2d3b5.webp",
   // 网站侧边栏公告 (不填写即不开启)
-  Tips: '<p>欢迎光临我的博客 🎉</p><p>这里会分享我的日常和学习中的收集、整理及总结，希望能对你有所帮助:) 💖</p>',
+  Tips: "<p>欢迎光临我的博客 🎉</p><p>这里会分享我的日常和学习中的收集、整理及总结，希望能对你有所帮助:) 💖</p>",
   // 首页打字机文案列表
   TypeWriteList: [
-    '不曾与你分享的时间,我在进步.',
+    "不曾与你分享的时间,我在进步.",
     "I am making progress in the time I haven't shared with you.",
   ],
   // 网站创建时间
-  CreateTime: '2021-09-01',
+  CreateTime: "2021-09-01",
   // 顶部 Banner 配置
   HomeBanner: {
     enable: true,
     // 首页高度
-    HomeHeight: '38.88rem',
+    HomeHeight: "38.88rem",
     // 其他页面高度
-    PageHeight: '28.88rem',
+    PageHeight: "28.88rem",
     // 背景
-    background: "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
+    background:
+      "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
@@ -330,23 +336,40 @@ export default {
   Navs: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
-    { text: '朋友', link: '/links', icon: 'Nav_friends' },
-    { text: '圈子', link: '/friends', icon: 'Nav_rss' },
-    { text: '动态', link: '/talking', icon: 'Nav_talking' },
-    { text: '昔日', link: '/archives', icon: 'Nav_archives' },
-    { text: '留言', link: '/message', icon: 'Nav_message' },
-    { text: '关于', link: '/about', icon: 'Nav_about' },
-    { text: 'API', link: 'https://api.vvhan.com/', target: true, icon: 'Nav_link' },
+    { text: "朋友", link: "/links", icon: "Nav_friends" },
+    { text: "圈子", link: "/friends", icon: "Nav_rss" },
+    { text: "动态", link: "/talking", icon: "Nav_talking" },
+    { text: "昔日", link: "/archives", icon: "Nav_archives" },
+    { text: "留言", link: "/message", icon: "Nav_message" },
+    { text: "关于", link: "/about", icon: "Nav_about" },
+    {
+      text: "API",
+      link: "https://api.vvhan.com/",
+      target: true,
+      icon: "Nav_link",
+    },
   ],
   // 侧边栏个人网站
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
-    { text: 'Github', link: 'https://github.com/uxiaohan', icon: 'WebSite_github' },
-    { text: '韩小韩API', link: 'https://api.vvhan.com', icon: 'WebSite_api' },
-    { text: '每日热榜', link: 'https://hot.vvhan.com', icon: 'WebSite_hot' },
-    { text: '骤雨重山图床', link: 'https://wp-cdn.4ce.cn', icon: 'WebSite_img' },
-    { text: 'HanAnalytics', link: 'https://analytics.vvhan.com', icon: 'WebSite_analytics' },
+    {
+      text: "Github",
+      link: "https://github.com/uxiaohan",
+      icon: "WebSite_github",
+    },
+    { text: "韩小韩API", link: "https://api.vvhan.com", icon: "WebSite_api" },
+    { text: "每日热榜", link: "https://hot.vvhan.com", icon: "WebSite_hot" },
+    {
+      text: "骤雨重山图床",
+      link: "https://wp-cdn.4ce.cn",
+      icon: "WebSite_img",
+    },
+    {
+      text: "HanAnalytics",
+      link: "https://analytics.vvhan.com",
+      icon: "WebSite_analytics",
+    },
   ],
   // 侧边栏展示
   AsideShow: {
@@ -357,52 +380,56 @@ export default {
     // 是否展示标签
     TagsShow: true,
     // 是否展示推荐文章
-    recommendArticleShow: true
+    recommendArticleShow: true,
   },
   // DNS预解析地址
   DNSOptimization: [
-    'https://i0.wp.com',
-    'https://cn.cravatar.com',
-    'https://analytics.vvhan.com',
-    'https://vh-api.4ce.cn',
-    'https://registry.npmmirror.com',
-    'https://pagead2.googlesyndication.com'
+    "https://i0.wp.com",
+    "https://cn.cravatar.com",
+    "https://analytics.vvhan.com",
+    "https://vh-api.4ce.cn",
+    "https://registry.npmmirror.com",
+    "https://pagead2.googlesyndication.com",
   ],
   // 博客音乐组件解析接口
-  vhMusicApi: 'https://vh-api.4ce.cn/blog/meting',
+  vhMusicApi: "https://vh-api.4ce.cn/blog/meting",
   // 评论组件（只允许同时开启一个）
   Comment: {
     // Twikoo 评论
     Twikoo: {
       enable: false,
-      envId: ''
+      envId: "",
     },
     // Waline 评论
     Waline: {
       enable: false,
-      serverURL: ''
-    }
+      serverURL: "",
+    },
   },
   // Han Analytics 统计（https://github.com/uxiaohan/HanAnalytics）
-  HanAnalytics: { enable: true, server: 'https://analytics.vvhan.com', siteId: 'Hello-HanHexoBlog' },
+  HanAnalytics: {
+    enable: true,
+    server: "https://analytics.vvhan.com",
+    siteId: "Hello-HanHexoBlog",
+  },
   // Google 广告
   GoogleAds: {
-    ad_Client: '', //ca-pub-xxxxxx
+    ad_Client: "", //ca-pub-xxxxxx
     // 侧边栏广告(不填不开启)
     asideAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxx" data-ad-slot="xxxxxx" data-ad-format="auto" data-full-width-responsive="true"></ins>`,
     // 文章页广告(不填不开启)
-    articleAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxx" data-ad-slot="xxxxxx" data-ad-format="auto" data-full-width-responsive="true"></ins>`
+    articleAD_Slot: `<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxx" data-ad-slot="xxxxxx" data-ad-format="auto" data-full-width-responsive="true"></ins>`,
   },
   // 文章内赞赏码
   Reward: {
     // 支付宝收款码
-    AliPay: '/assets/images/alipay.webp',
+    AliPay: "/assets/images/alipay.webp",
     // 微信收款码
-    WeChat: '/assets/images/wechat.webp'
+    WeChat: "/assets/images/wechat.webp",
   },
   // 页面阻尼滚动速度
-  ScrollSpeed: 666
-}
+  ScrollSpeed: 666,
+};
 ```
 
 ## 🌈 组件
@@ -509,8 +536,8 @@ export default {
 
 ```javascript
 const obj = {
-	name: "hi",
-	age: 18
+  name: "hi",
+  age: 18,
 };
 // 判断某个属性是否在对象里
 console.log("name" in obj);
@@ -524,9 +551,13 @@ console.log(Object.keys(obj));
 
 ```md
 <!-- H标签，页面标题即h1，不建议文章内使用h1标签 -->
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
 ```
 
@@ -537,7 +568,6 @@ console.log(Object.keys(obj));
 #### H4
 
 ##### H5
-
 
 ### 数学公式
 
@@ -557,9 +587,11 @@ $+$、$-$、$=$、$>$、$<$、$\times$、$\div$、$\equiv$、$\leq$、$\geq$、$
 % 集合符号
 $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\N$、$\Z$、$\R$、$\R$、$\infty$
 ```
+
 > 函数式
 
 ${f(x)=a_nx^n+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}}+\cdots$
+
 > 四则运算
 
 $2x - 5y =  8$
@@ -569,23 +601,28 @@ $7x \times 2y \neq 3z$
 > 希腊字母
 
 $\Gamma$、$\iota$、$\sigma$、$\phi$、$\upsilon$、$\Pi$、$\Bbbk$、$\heartsuit$、$\int$、$\oint$
+
 > 三角函数、对数、指数
 
 $\tan$、$\sin$、$\cos$、$\lg$、$\arcsin$、$\arctan$、$\min$、$\max$、$\exp$、$\log$
+
 > 运算符
 
 $+$、$-$、$=$、$>$、$<$、$\times$、$\div$、$\equiv$、$\leq$、$\geq$、$\neq$
+
 > 集合符号
 
 $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\N$、$\Z$、$\R$、$\R$、$\infty$
-
 
 ### 按钮组件
 
 ```md
 <!-- 按钮组件 -->
+
 ::btn[标题]{link="URL 链接"}
+
 <!-- 支持类型：info、success、warning、error、import -->
+
 ::btn[按钮]{link="链接" type="info"}
 ```
 
@@ -600,10 +637,13 @@ $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$
 
 ```md
 <!-- note组件 -->
+
 :::note
 这是 note 组件 默认主题
 :::
+
 <!-- 支持类型：info、success、warning、error、import -->
+
 :::note{type="info"}
 这是 note 组件 success 主题
 :::
@@ -653,8 +693,11 @@ $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$
 
 ```md
 <!-- 纵向图片 -->
+
 ::vhLivePhoto{photo="https://static.vvhan.com/img/1.webp" video="https://static.vvhan.com/img/1.mp4" type="y"}
+
 <!-- 横向图片 -->
+
 ::vhLivePhoto{photo="https://static.vvhan.com/img/2.webp" video="https://static.vvhan.com/img/2.mp4"}
 ```
 
@@ -669,8 +712,11 @@ $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$
 type 支持：song, playlist, album, search（默认值：song）
 server 支持：netease, tencent, kugou, xiami, baidu（默认值：netease） -->
 <!-- 单曲 -->
+
 ::vhMusic{id="1474697967"}
+
 <!-- 列表 -->
+
 ::vhMusic{id="173901981" type="playlist"}
 ```
 

@@ -8,5 +8,5 @@ export default () => {
   const timeDOM = document.querySelector("em.web_time");
   if (!timeDOM) return;
   if (!CreateTime) return timeDOM.remove();
-  timeDOM.textContent = fmtDate(CreateTime)
-}
+  timeDOM.textContent = fmtDate(CreateTime);
+};

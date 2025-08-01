@@ -5,4 +5,4 @@ export default (arr: Array<any>) => {
     arr.unshift(item);
   }
   return arr;
-}
+};

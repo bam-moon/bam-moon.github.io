@@ -1,14 +1,21 @@
-import path from 'path';
-import _fs from 'fs';
+import path from "path";
+import _fs from "fs";
 const fs = _fs.promises;
-import { fileURLToPath } from 'url';
-import SITE_INFO from '@/config';
+import { fileURLToPath } from "url";
+import SITE_INFO from "@/config";
 // 获取当前模块的目录路径
 const __filename = fileURLToPath(import.meta.url); // 当前文件的绝对路径
 const __dirname = path.dirname(__filename); // 当前文件所在的目录
 
 // 支持的图片扩展名
-const SUPPORTED_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp']);
+const SUPPORTED_EXTENSIONS = new Set([
+  ".jpg",
+  ".jpeg",
+  ".png",
+  ".gif",
+  ".webp",
+  ".bmp",
+]);
 
 /**
  * 获取目录中的所有图片文件
@@ -18,7 +25,9 @@ const SUPPORTED_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', 
 async function getImageFiles(dir: string) {
   try {
     const files = await fs.readdir(dir);
-    return files.filter(file => SUPPORTED_EXTENSIONS.has(path.extname(file).toLowerCase()));
+    return files.filter((file) =>
+      SUPPORTED_EXTENSIONS.has(path.extname(file).toLowerCase())
+    );
   } catch (error) {
     console.error(`无法读取目录 ${dir}:`, error);
     return [];
@@ -57,10 +66,10 @@ async function* createImageIterator(dir: string) {
   }
 }
 
-const targetDir = path.resolve(__dirname, '../../public/assets/images/banner/'); // 目标目录
+const targetDir = path.resolve(__dirname, "../../public/assets/images/banner/"); // 目标目录
 const fileIter = createImageIterator(targetDir);
 export default async (filename: string | null | undefined) => {
   if (filename) return filename;
   const { value } = await fileIter.next();
-  return SITE_INFO.Site + `/assets/images/banner/${value}`
-}
+  return SITE_INFO.Site + `/assets/images/banner/${value}`;
+};

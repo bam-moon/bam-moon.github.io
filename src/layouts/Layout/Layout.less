@@ -7,7 +7,7 @@ main.main {
   height: max-content;
   overflow: visible !important;
 
-  &>.main-inner {
+  & > .main-inner {
     flex-shrink: 0;
     position: relative;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ main.main {
     height: max-content;
     z-index: 1;
 
-    &>.main-inner-content {
+    & > .main-inner-content {
       flex: 1 1 0%;
       box-sizing: border-box;
       padding: 0.88rem 0.66rem;
@@ -32,7 +32,7 @@ main.main {
 
 @media screen and (max-width: 888px) {
   main.main {
-    &>.main-inner {
+    & > .main-inner {
       flex-direction: column;
     }
   }

@@ -10,7 +10,7 @@ import videoInit from "@/scripts/Video";
 // 初始化音乐播放器
 import musicInit from "@/scripts/Music";
 // 初始化 LivePhoto
-import livePhotoInit from '@/scripts/LivePhoto'
+import livePhotoInit from "@/scripts/LivePhoto";
 // 初始化BackTop组件
 import BackTopInitFn from "@/scripts/BackTop";
 // 搜索
@@ -76,7 +76,7 @@ const indexInit = async (only: boolean = true) => {
   // 谷歌 SEO 推送
   SeoPushInit();
   // 文章评论初始化
-  checkComment() && commentInit(checkComment(), commentLIst)
+  checkComment() && commentInit(checkComment(), commentLIst);
   // Han Analytics 统计
   HanAnalyticsInit();
   // 打字效果
@@ -108,6 +108,12 @@ export default () => {
     MusicList.forEach((i: any) => i.destroy());
     MusicList.length = 0;
   });
-  console.log("%c🌻 程序：Astro | 主题：vhAstro-Theme | 作者：Han | Github：https://github.com/uxiaohan/vhAstro-Theme 🌻", "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px");
-  console.log("%c\u521D\u59CB\u5316\u5B8C\u6BD5.", "color: #ffffff; background: #000; padding:5px");
-}
+  console.log(
+    "%c🌻 程序：Astro | 主题：vhAstro-Theme | 作者：Han | Github：https://github.com/uxiaohan/vhAstro-Theme 🌻",
+    "color:#fff; background: linear-gradient(270deg, #18d7d3, #68b7dd, #8695e6, #986fee); padding: 8px 15px; border-radius: 8px"
+  );
+  console.log(
+    "%c\u521D\u59CB\u5316\u5B8C\u6BD5.",
+    "color: #ffffff; background: #000; padding:5px"
+  );
+};

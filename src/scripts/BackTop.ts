@@ -1,4 +1,3 @@
-
 // 滚动条高度变化事件======
 const scrollChangeFn = () => {
   const scrollHeight = document.documentElement.scrollHeight;
@@ -9,7 +8,8 @@ const scrollChangeFn = () => {
   // 进度为 不在范围内
   if (percentage < 0 || percentage > 100) return;
   // 进度不为 0
-  circle.style.strokeDashoffset = circumference - (percentage / 100) * circumference;
+  circle.style.strokeDashoffset =
+    circumference - (percentage / 100) * circumference;
 };
 // 返回顶部事件
 const backTopFn = () => {

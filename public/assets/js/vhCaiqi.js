@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   const confettiEffect = (() => {
     // 状态对象
     const state = {
@@ -16,9 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
       animationHandler: null,
       particleColors: {
         colorOptions: [
-          "DodgerBlue", "OliveDrab", "Gold", "pink",
-          "SlateBlue", "lightblue", "Violet", "PaleGreen",
-          "SteelBlue", "SandyBrown", "Chocolate", "Crimson"
+          "DodgerBlue",
+          "OliveDrab",
+          "Gold",
+          "pink",
+          "SlateBlue",
+          "lightblue",
+          "Violet",
+          "PaleGreen",
+          "SteelBlue",
+          "SandyBrown",
+          "Chocolate",
+          "Crimson",
         ],
         colorIndex: 0,
         colorIncrementer: 0,
@@ -27,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
             this.colorIndex = (this.colorIndex + 1) % this.colorOptions.length;
           }
           return this.colorOptions[this.colorIndex];
-        }
-      }
+        },
+      },
     };
 
     // 粒子构造函数
@@ -41,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         color: color,
         tilt: Math.floor(10 * Math.random()) - 10,
         tiltAngleIncremental: 0.07 * Math.random() + 0.05,
-        tiltAngle: 0
+        tiltAngle: 0,
       };
     }
 
@@ -61,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initializeButton() {
-      const elements = document.querySelectorAll('.vh-aside-item.user');
-      elements.forEach(el => {
-        el.addEventListener('mouseenter', restartConfetti);
-        el.addEventListener('mouseleave', deactivateConfetti);
+      const elements = document.querySelectorAll(".vh-aside-item.user");
+      elements.forEach((el) => {
+        el.addEventListener("mouseenter", restartConfetti);
+        el.addEventListener("mouseleave", deactivateConfetti);
       });
     }
 
@@ -86,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (state.animationComplete) return;
       handleResize();
       state.ctx.clearRect(0, 0, state.W, state.H);
-      state.particles.forEach(p => drawParticle(p, state.ctx));
+      state.particles.forEach((p) => drawParticle(p, state.ctx));
       updateParticles();
       state.animationHandler = requestAnimationFrame(animate);
     }
@@ -128,9 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkReposition(p, i) {
       if (!(p.x > state.W + 20 || p.x < -20 || p.y > state.H)) return;
 
-      const shouldReposition = (i % 5 > 0 || i % 2 === 0)
-        ? { x: Math.random() * state.W, y: -10 }
-        : Math.sin(state.angle) > 0
+      const shouldReposition =
+        i % 5 > 0 || i % 2 === 0
+          ? { x: Math.random() * state.W, y: -10 }
+          : Math.sin(state.angle) > 0
           ? { x: -5, y: Math.random() * state.H }
           : { x: state.W + 5, y: Math.random() * state.H };
 
@@ -178,11 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 公共接口
     return {
       init: () => {
-        if (!document.querySelector('.vh-aside-item.user > canvas')) return;
+        if (!document.querySelector(".vh-aside-item.user > canvas")) return;
         setGlobals(".vh-aside-item.user > canvas");
         initializeButton();
-        window.addEventListener('resize', handleResize);
-      }
+        window.addEventListener("resize", handleResize);
+      },
     };
   })();
 

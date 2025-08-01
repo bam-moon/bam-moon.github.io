@@ -12,7 +12,7 @@ section.vh-art-page {
   height: max-content;
   overflow: hidden;
 
-  &>a.vh-pagination-item {
+  & > a.vh-pagination-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,13 +32,13 @@ section.vh-art-page {
       color: var(--vh-white-color);
       background-color: rgba(129, 146, 174, 0.36);
 
-      &>svg {
+      & > svg {
         color: var(--vh-white-color);
       }
     }
 
     &.active {
-      background-color: #8192AE;
+      background-color: #8192ae;
       cursor: default;
       pointer-events: none;
       color: var(--vh-white-color);
@@ -47,12 +47,12 @@ section.vh-art-page {
     &.disabled {
       pointer-events: none;
 
-      &>svg {
+      & > svg {
         color: var(--vh-font-16);
       }
     }
 
-    &>svg {
+    & > svg {
       height: 1.18rem;
       width: auto;
       object-fit: contain;

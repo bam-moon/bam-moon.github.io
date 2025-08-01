@@ -5,7 +5,7 @@
   width: 100%;
   height: max-content;
 
-  &>section.article-list {
+  & > section.article-list {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,7 +15,7 @@
     height: max-content;
     overflow: hidden;
 
-    &>.vh-article-item {
+    & > .vh-article-item {
       position: relative;
       box-sizing: border-box;
       display: flex;
@@ -29,8 +29,8 @@
       overflow: hidden;
 
       &:hover {
-        &>.vh-article-banner {
-          &>img {
+        & > .vh-article-banner {
+          & > img {
             transform: scale(1.08);
           }
         }
@@ -60,9 +60,9 @@
           /* 兼容旧版浏览器 */
         }
 
-        &>.vh-article-banner {
+        & > .vh-article-banner {
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -75,8 +75,7 @@
         }
       }
 
-
-      &>.vh-article-banner {
+      & > .vh-article-banner {
         flex-shrink: 0;
         position: relative;
         box-sizing: border-box;
@@ -84,14 +83,14 @@
         height: 12rem;
         overflow: hidden;
 
-        &>img {
+        & > img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
 
-      &>header {
+      & > header {
         box-sizing: border-box;
         padding: 0.88rem 1.166rem;
         display: flex;
@@ -100,14 +99,14 @@
         width: 100%;
         height: max-content;
 
-        &>h3 {
+        & > h3 {
           display: flex;
           align-self: center;
           justify-content: space-between;
           width: 100%;
           height: max-content;
 
-          &>.vh-article-cat {
+          & > .vh-article-cat {
             flex-shrink: 0;
             box-sizing: border-box;
             width: max-content;
@@ -119,7 +118,12 @@
             --gradient-color-2: #b65fcf;
             /* 默认渐变色结束 */
             --gradient-color-3: #e39ff6;
-            background: linear-gradient(118deg, var(--gradient-color-1), var(--gradient-color-2) 26%, var(--gradient-color-3));
+            background: linear-gradient(
+              118deg,
+              var(--gradient-color-1),
+              var(--gradient-color-2) 26%,
+              var(--gradient-color-3)
+            );
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -162,7 +166,7 @@
             }
           }
 
-          &>time {
+          & > time {
             box-sizing: border-box;
             margin-top: auto;
             font-size: 0.805rem;
@@ -172,13 +176,13 @@
           }
         }
 
-        &>.title {
+        & > .title {
           box-sizing: border-box;
           width: 100%;
           height: max-content;
           overflow: hidden;
 
-          &>a {
+          & > a {
             font-size: 1.06rem;
             font-weight: 600;
             transition: color 0.18s;
@@ -190,7 +194,7 @@
         }
       }
 
-      &>.vh-article-excerpt {
+      & > .vh-article-excerpt {
         box-sizing: border-box;
         padding: 0 1.166rem;
         width: 100%;
@@ -202,8 +206,7 @@
         line-height: 1.28rem;
       }
 
-
-      &>.vh-article-taglist {
+      & > .vh-article-taglist {
         margin-top: auto;
         box-sizing: border-box;
         padding: 0.66rem 1.166rem 1rem;
@@ -211,7 +214,7 @@
         height: max-content;
         overflow: hidden;
 
-        &>a {
+        & > a {
           box-sizing: border-box;
           margin-right: 0.88rem;
           color: var(--vh-font);
@@ -234,7 +237,7 @@
       }
     }
 
-    &>.vh-article-pagination {
+    & > .vh-article-pagination {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -244,7 +247,7 @@
 
 @media screen and (max-width: 1150px) {
   .article-list-main {
-    &>section.article-list {
+    & > section.article-list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
@@ -252,7 +255,7 @@
 
 @media screen and (max-width: 556px) {
   .article-list-main {
-    &>section.article-list {
+    & > section.article-list {
       grid-template-columns: repeat(1, 1fr);
     }
   }

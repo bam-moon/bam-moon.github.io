@@ -13,7 +13,7 @@ recommend: true
 ---
 
 :::note
-Web Watermark是一款在线的网页版可离线使用的安全的图片添加水印项目
+Web Watermark 是一款在线的网页版可离线使用的安全的图片添加水印项目
 :::
 
 ### 页面截图

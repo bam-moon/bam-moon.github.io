@@ -13,14 +13,14 @@ recommend: true
 ---
 
 :::note
-实时关注 Ta 的微博，并了解 Ta 微博动态的情绪心情，通过 Bark 或 PushDeer 进行通知的，基于 Nodejs 的 AI的微博动态心情分析 脚本
+实时关注 Ta 的微博，并了解 Ta 微博动态的情绪心情，通过 Bark 或 PushDeer 进行通知的，基于 Nodejs 的 AI 的微博动态心情分析 脚本
 :::
 
 ### 开源地址
 
 [WeiBo-Mood](https://github.com/uxiaohan/WeiBo-Mood)
 
-[免费AI注册](https://cloud.siliconflow.cn/i/R83F9xkI)
+[免费 AI 注册](https://cloud.siliconflow.cn/i/R83F9xkI)
 
 ### 配置 config.js 文件
 
@@ -39,7 +39,7 @@ module.exports = {
   //   Bark通知Token 不填写即不通知  https://bark.day.app/
   BARK_TOKEN: "",
   //   PushDeer通知Token 不填写即不通知  https://www.pushdeer.com/
-  PUSH_DEER_TOKEN: ""
+  PUSH_DEER_TOKEN: "",
 };
 ```
 

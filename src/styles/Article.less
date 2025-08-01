@@ -6,7 +6,7 @@ article.vh-article-main {
   width: 100%;
   height: max-content;
 
-  &>header {
+  & > header {
     box-sizing: border-box;
     padding: 2rem 1rem 1rem;
     display: flex;
@@ -19,12 +19,12 @@ article.vh-article-main {
     box-shadow: var(--vh-box-shadow);
     overflow: hidden;
 
-    &>h1 {
+    & > h1 {
       width: 100%;
       font-weight: 700;
     }
 
-    &>.article-meta {
+    & > .article-meta {
       box-sizing: border-box;
       display: flex;
       align-items: center;
@@ -34,39 +34,38 @@ article.vh-article-main {
       height: 0.98rem;
       overflow: hidden;
 
-
-      &>.article-meta-item {
+      & > .article-meta-item {
         display: flex;
         align-items: center;
         gap: 0.18rem;
         width: max-content;
 
-        &>svg {
+        & > svg {
           flex-shrink: 0;
           height: 0.888rem;
           width: auto;
           object-fit: contain;
         }
 
-        &>time {
+        & > time {
           color: var(--vh-font-66);
         }
 
-        &>span {
+        & > span {
           &.count {
             padding-left: 0.38rem;
-            color: #3FA67F;
+            color: #3fa67f;
 
             strong {
-              color: #3FA67F;
+              color: #3fa67f;
             }
           }
 
           &.time {
-            color: #E9B740;
+            color: #e9b740;
 
             strong {
-              color: #E9B740;
+              color: #e9b740;
             }
           }
         }
@@ -74,7 +73,7 @@ article.vh-article-main {
     }
   }
 
-  &>main {
+  & > main {
     box-sizing: border-box;
     padding: 1rem;
     display: flex;
@@ -90,7 +89,7 @@ article.vh-article-main {
     .aplayer-list {
       max-height: max-content !important;
 
-      &>ol {
+      & > ol {
         max-height: 566px !important;
       }
     }
@@ -101,7 +100,7 @@ article.vh-article-main {
       }
     }
 
-    &>.tag-list {
+    & > .tag-list {
       margin-top: 2rem;
       position: relative;
       box-sizing: border-box;
@@ -111,7 +110,7 @@ article.vh-article-main {
       gap: 0.58rem;
       width: 100%;
 
-      &>a {
+      & > a {
         position: relative;
         box-sizing: border-box;
         padding: 0 0.3125rem;
@@ -145,7 +144,7 @@ article.vh-article-main {
 
         &::before,
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           left: auto;
           right: 0;
@@ -164,9 +163,7 @@ article.vh-article-main {
           z-index: -1;
         }
 
-
-
-        &:nth-of-type(6n+1) {
+        &:nth-of-type(6n + 1) {
           color: var(--vh-default);
 
           &::after {
@@ -174,7 +171,7 @@ article.vh-article-main {
           }
         }
 
-        &:nth-of-type(6n+2) {
+        &:nth-of-type(6n + 2) {
           color: var(--vh-info);
 
           &::after {
@@ -182,7 +179,7 @@ article.vh-article-main {
           }
         }
 
-        &:nth-of-type(6n+3) {
+        &:nth-of-type(6n + 3) {
           color: var(--vh-success);
 
           &::after {
@@ -190,7 +187,7 @@ article.vh-article-main {
           }
         }
 
-        &:nth-of-type(6n+4) {
+        &:nth-of-type(6n + 4) {
           color: var(--vh-warning);
 
           &::after {
@@ -198,7 +195,7 @@ article.vh-article-main {
           }
         }
 
-        &:nth-of-type(6n+5) {
+        &:nth-of-type(6n + 5) {
           color: var(--vh-error);
 
           &::after {
@@ -206,7 +203,7 @@ article.vh-article-main {
           }
         }
 
-        &:nth-of-type(6n+6) {
+        &:nth-of-type(6n + 6) {
           color: var(--vh-import);
 
           &::after {
@@ -214,7 +211,7 @@ article.vh-article-main {
           }
         }
 
-        &>svg {
+        & > svg {
           height: 0.8rem;
           width: auto;
           object-fit: contain;
@@ -224,7 +221,7 @@ article.vh-article-main {
     }
   }
 
-  &>footer {
+  & > footer {
     box-sizing: border-box;
     width: 100%;
     height: max-content;
@@ -233,8 +230,8 @@ article.vh-article-main {
 
 @media screen and (max-width: 999px) {
   article.vh-article-main {
-    &>header {
-      &>h1 {
+    & > header {
+      & > h1 {
         font-size: 1.36rem;
       }
     }

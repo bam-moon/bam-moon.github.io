@@ -11,7 +11,7 @@
   backdrop-filter: saturate(100%) blur(2px);
   user-select: none;
 
-  &>main {
+  & > main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
     max-width: var(--vh-main-max-width);
     height: max-content;
 
-    &>p {
+    & > p {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -28,24 +28,24 @@
       gap: 0.618rem;
       line-height: 1;
 
-      &>a {
+      & > a {
         line-height: 1;
       }
 
-      &>span {
+      & > span {
         box-sizing: border-box;
         padding-left: 0.28rem;
         display: flex;
         align-items: center;
         width: max-content;
         height: 1.25rem;
-        background-color: #25C2A0;
+        background-color: #25c2a0;
         font-size: 0.68rem;
         border-radius: 0.18rem;
         overflow: hidden;
 
-        &>cite,
-        &>em {
+        & > cite,
+        & > em {
           box-sizing: border-box;
           padding: 0 0.618rem;
           width: max-content;
@@ -55,15 +55,15 @@
           font-style: normal;
         }
 
-        &>cite {
+        & > cite {
           padding-left: 0.28rem;
         }
 
-        &>em {
-          background-color: #5D5D5D;
+        & > em {
+          background-color: #5d5d5d;
         }
 
-        &>svg {
+        & > svg {
           width: 0.88rem;
           height: 0.88rem;
         }
@@ -77,7 +77,7 @@
     }
   }
 
-  &>section {
+  & > section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -94,12 +94,11 @@
     }
 
     &.text {
-      &>p {
-
+      & > p {
         font-size: 0.88rem;
 
-        &>a {
-          color: #94A3B8;
+        & > a {
+          color: #94a3b8;
           transition: opacity 0.18s ease-in-out;
 
           &:hover {
@@ -110,7 +109,7 @@
     }
 
     &.icon {
-      &>p {
+      & > p {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -118,5 +117,4 @@
       }
     }
   }
-
 }
