@@ -60,6 +60,7 @@ export default {
     { text: "动态", link: "/talking", icon: "Nav_talking" },
     { text: "留言", link: "/message", icon: "Nav_message" },
     { text: "友链", link: "/links", icon: "Nav_friends" },
+    { text: 'API', link: 'https://api.vvhan.com/', target: true, icon: 'Nav_link' },
   ],
   // 侧边栏个人网站
   WebSites: [
