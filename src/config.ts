@@ -13,7 +13,7 @@ export default {
   // 作者头像
   Avatar: "https://wp-cdn.4ce.cn/v2/lx6YsQN.png",
   // 网站座右铭
-  Motto: "运气是计划之外的东西.",
+  Motto: "在纠结中思考，在矛盾中绽放.",
   // Cover 网站缩略图
   Cover: "/assets/images/banner/072c12ec85d2d3b5.webp",
   // 网站侧边栏公告 (不填写即不开启)
@@ -31,7 +31,7 @@ export default {
     // 首页高度
     HomeHeight: "28.88rem",
     // 其他页面高度
-    PageHeight: "18.88rem",
+    PageHeight: "8.88rem",
     // 背景
     background:
       "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
@@ -60,7 +60,7 @@ export default {
     { text: "动态", link: "/talking", icon: "Nav_talking" },
     { text: "留言", link: "/message", icon: "Nav_message" },
     { text: "友链", link: "/links", icon: "Nav_friends" },
-    { text: 'API', link: 'https://api.vvhan.com/', target: true, icon: 'Nav_link' },
+    { text: 'API', link: 'https://api.vvhan.com/', target: false, icon: 'Nav_link' },
   ],
   // 侧边栏个人网站
   WebSites: [
