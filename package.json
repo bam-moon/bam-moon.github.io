@@ -23,6 +23,7 @@
     "vh-plugin": "^1.2.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.4",
     "@playform/compress": "^0.1.9",
     "@types/dplayer": "^1.25.5",
     "@types/nprogress": "^0.2.3",
@@ -47,5 +48,5 @@
       "swup"
     ]
   },
-"packageManager": "pnpm@9.14.4"
+  "packageManager": "pnpm@9.14.4"
 }
