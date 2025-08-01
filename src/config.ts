@@ -31,7 +31,7 @@ export default {
     // 首页高度
     HomeHeight: "28.88rem",
     // 其他页面高度
-    PageHeight: "11.88rem",
+    PageHeight: "13.88rem",
     // 背景
     background:
       "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
