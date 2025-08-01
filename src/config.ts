@@ -29,9 +29,9 @@ export default {
   HomeBanner: {
     enable: true,
     // 首页高度
-    HomeHeight: "20.88rem",
+    HomeHeight: "28.88rem",
     // 其他页面高度
-    PageHeight: "15.88rem",
+    PageHeight: "18.88rem",
     // 背景
     background:
       "url('/assets/images/home-banner.webp') no-repeat center 60%/cover",
