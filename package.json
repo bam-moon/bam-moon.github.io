@@ -23,7 +23,7 @@
     "vh-plugin": "^1.2.2"
   },
   "devDependencies": {
-    "@playform/compress": "^0.1.9",
+    "@playform/compress": "^0.2.0",
     "@types/dplayer": "^1.25.5",
     "@types/nprogress": "^0.2.3",
     "@waline/client": "^3.5.7",
