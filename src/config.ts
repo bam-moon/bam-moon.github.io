@@ -52,16 +52,13 @@ export default {
   },
   // 导航栏 (新窗口打开 newWindow: true)
   Navs: [
-    // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
-    // 建议使用 https://tabler.io/icons 直接下载 SVG
-    { text: "文章", link: "/archives", icon: "Nav_archives" },
-    { text: "本人", link: "/about", icon: "Nav_about" },
-    { text: "圈子", link: "/friends", icon: "Nav_rss" },
-    { text: "动态", link: "/talking", icon: "Nav_talking" },
-    { text: "留言", link: "/message", icon: "Nav_message" },
-    { text: "友链", link: "/links", icon: "Nav_friends" },
-    { text: 'API', link: 'https://api.vvhan.com/', target: false, icon: 'Nav_link' },
-  ],
+  { text: "文章", link: "/archives", icon: "Nav_archives", target: false },
+  { text: "本人", link: "/about", icon: "Nav_about", target: false },
+  { text: "圈子", link: "/friends", icon: "Nav_rss", target: false },
+  { text: "动态", link: "/talking", icon: "Nav_talking", target: false },
+  { text: "留言", link: "/message", icon: "Nav_message", target: false },
+  { text: "友链", link: "/links", icon: "Nav_friends", target: false },
+],
   // 侧边栏个人网站
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
