@@ -107,7 +107,7 @@ export default {
     // Waline 评论
     Waline: {
       enable: true,
-      serverURL: "https://waline-red-beta.vercel.app/",
+      serverURL: "https://waline-red-beta.vercel.app",
     },
   },
   // Han Analytics 统计（https://github.com/uxiaohan/HanAnalytics）
