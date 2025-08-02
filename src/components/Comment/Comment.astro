@@ -1,18 +1,18 @@
 ---
 import "./Comment.less";
+const WalineServerURL = "https://waline-red-beta.vercel.app";
 ---
 
-<section class="vh-comment"></section>
-<script>
-	// 服务地址 URL
-	const WalineServerURL = "https://waline-red-beta.vercel.app";
-	// 评论组件 dom
-	const commentDOM = ".vh-comment";
-	document.addEventListener("astro:page-load", async () => {
-		if (!document.querySelector(commentDOM) || !WalineServerURL) return;
-		import("@waline/client/waline.css");
-		import("@waline/client/waline-meta.css");
-		const { init } = await import("@waline/client");
-		init({ el: commentDOM, serverURL: WalineServerURL });
+<section class="vh-comment" id="comment"></section>
+
+<script type="module" client:load>
+	import { init } from "@waline/client";
+	import "@waline/client/waline.css";
+	import "@waline/client/waline-meta.css";
+
+	// 初始化 Waline 评论组件
+	init({
+		el: "#comment",
+		serverURL: "https://waline-red-beta.vercel.app",
 	});
 </script>
