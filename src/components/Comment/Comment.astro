@@ -1,18 +1,27 @@
 ---
 import "./Comment.less";
 ---
-
 <section class="vh-comment"></section>
-<script>
-	// 服务地址 URL
+
+<script type="module">
 	const WalineServerURL = "https://waline-red-beta.vercel.app";
-	// 评论组件 dom
 	const commentDOM = ".vh-comment";
-	document.addEventListener("astro:page-load", async () => {
+
+	async function loadWaline() {
 		if (!document.querySelector(commentDOM) || !WalineServerURL) return;
-		import("@waline/client/waline.css");
-		import("@waline/client/waline-meta.css");
+		await import("@waline/client/waline.css");
+		await import("@waline/client/waline-meta.css");
 		const { init } = await import("@waline/client");
 		init({ el: commentDOM, serverURL: WalineServerURL });
-	});
+	}
+
+	// 页面首次加载（非 Astro 路由）
+	if (document.readyState === "complete" || document.readyState === "interactive") {
+		loadWaline();
+	} else {
+		document.addEventListener("DOMContentLoaded", loadWaline);
+	}
+
+	// Astro 路由跳转页面时
+	document.addEventListener("astro:page-load", loadWaline);
 </script>
