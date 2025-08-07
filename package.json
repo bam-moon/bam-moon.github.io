@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "@playform/compress": "^0.1.9",
+    "@playform/compress": "^0.2.0",
     "@types/dplayer": "^1.25.5",
     "@types/nprogress": "^0.2.3",
     "@waline/client": "^3.6.0",
@@ -39,7 +39,7 @@
     "remark-directive": "^4.0.0",
     "remark-math": "^6.0.0",
     "remark-sectionize": "^2.1.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "unist-util-visit": "^5.0.0"
   },
   "pnpm": {
