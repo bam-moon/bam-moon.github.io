@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/mdx':
-        specifier: ^4.2.6
-        version: 4.3.1(astro@5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))
+        specifier: ^4.3.4
+        version: 4.3.4(astro@5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))
       '@astrojs/rss':
         specifier: ^4.0.11
         version: 4.0.12
@@ -25,10 +25,10 @@ importers:
         version: 1.10.1
       astro:
         specifier: ^5.7.12
-        version: 5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
+        version: 5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       overlayscrollbars:
-        specifier: ^2.11.2
-        version: 2.11.4
+        specifier: ^2.11.5
+        version: 2.11.5
       vanilla-lazyload:
         specifier: ^19.1.3
         version: 19.1.3
@@ -41,7 +41,7 @@ importers:
         version: 0.9.4(typescript@5.8.3)
       '@playform/compress':
         specifier: ^0.1.9
-        version: 0.1.9(@types/node@24.1.0)(less@4.4.0)(rollup@2.79.2)(typescript@5.8.3)(yaml@2.8.0)
+        version: 0.1.9(@types/node@24.1.0)(less@4.4.1)(rollup@2.79.2)(typescript@5.8.3)(yaml@2.8.0)
       '@types/dplayer':
         specifier: ^1.25.5
         version: 1.25.5
@@ -61,8 +61,8 @@ importers:
         specifier: ^8.57.1
         version: 8.57.1
       less:
-        specifier: ^4.3.0
-        version: 4.4.0
+        specifier: ^4.4.1
+        version: 4.4.1
       mdast-util-to-string:
         specifier: ^4.0.0
         version: 4.0.0
@@ -109,6 +109,9 @@ packages:
   '@astrojs/internal-helpers@0.6.1':
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
 
+  '@astrojs/internal-helpers@0.7.2':
+    resolution: {integrity: sha512-KCkCqR3Goym79soqEtbtLzJfqhTWMyVaizUi35FLzgGSzBotSw8DB1qwsu7U96ihOJgYhDk2nVPz+3LnXPeX6g==}
+
   '@astrojs/language-server@2.15.4':
     resolution: {integrity: sha512-JivzASqTPR2bao9BWsSc/woPHH7OGSGc9aMxXL4U6egVTqBycB3ZHdBJPuOCVtcGLrzdWTosAqVPz1BVoxE0+A==}
     hasBin: true
@@ -124,8 +127,11 @@ packages:
   '@astrojs/markdown-remark@6.3.3':
     resolution: {integrity: sha512-DDRtD1sPvAuA7ms2btc9A7/7DApKqgLMNrE6kh5tmkfy8utD0Z738gqd3p5aViYYdUtHIyEJ1X4mCMxfCfu15w==}
 
-  '@astrojs/mdx@4.3.1':
-    resolution: {integrity: sha512-0ynzkFd5p2IFDLPAfAcGizg44WyS0qUr43nP2vQkvrPlpoPEMeeoi1xWiWsVqQNaZ0FOmNqfUviUn52nm9mLag==}
+  '@astrojs/markdown-remark@6.3.6':
+    resolution: {integrity: sha512-bwylYktCTsLMVoCOEHbn2GSUA3c5KT/qilekBKA3CBng0bo1TYjNZPr761vxumRk9kJGqTOtU+fgCAp5Vwokug==}
+
+  '@astrojs/mdx@4.3.4':
+    resolution: {integrity: sha512-Ew3iP+6zuzzJWNEH5Qr1iknrue1heEfgmfuMpuwLaSwqlUiJQ0NDb2oxKosgWU1ROYmVf1H4KCmS6QdMWKyFjw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       astro: ^5.0.0
@@ -1228,20 +1234,38 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@shikijs/core@3.10.0':
+    resolution: {integrity: sha512-iF1pDengps5BLXnZDF9yJIb3a7K5WfgeocH1U8u9UYM+UGU6lkl2PLD7/npxL+dOFrsxzp4KjafhHx+/sggplw==}
+
   '@shikijs/core@3.9.0':
     resolution: {integrity: sha512-2IpmZV+M17atvV+2qNV+pSzmusS4l3p8fol32kcGEwHQcTn9VSpNnl/N8jY9zvdGrB39Hz1MCebZrtnXr/LSiw==}
+
+  '@shikijs/engine-javascript@3.10.0':
+    resolution: {integrity: sha512-lyYi1/xmXmPfzCEC5n6WXbQJtA06Mf88nMHXqKWDY0ynec3BCzHYKlVxurDdY9XCp9AuYn62EWyNI1kddms8GA==}
 
   '@shikijs/engine-javascript@3.9.0':
     resolution: {integrity: sha512-yaQlDYwnIukedIXi0XX5dSdQ2+8mkBZLe8DAIRTEXNjGv3YBcZg/YlbsMgpWe7HSr4H3dUBl7+6IoNDRiwVGxw==}
 
+  '@shikijs/engine-oniguruma@3.10.0':
+    resolution: {integrity: sha512-O7ofyEUm4uDBlfd+2YPc7GHA72Kr3eUw5wSgZzgK6GUniD52106diH9Fo7+7l+lhBiyWntYcvzGK8QMciwf+Xw==}
+
   '@shikijs/engine-oniguruma@3.9.0':
     resolution: {integrity: sha512-bCX7BZGYgKISP6t3pab11eu0rUBzKvWKvS4KBN9fu9maBJM7PWn+Uhsl+5H3Z5lMq0JaCcY/N1oPQJ36eyQHHg==}
+
+  '@shikijs/langs@3.10.0':
+    resolution: {integrity: sha512-uE9ojRozrm1PmUw2aM8EbHpT/XdWzSdv/sWRN5MCMdXMW1eOl4bMxWAlY5yhZj0GghYfMbBzMlcDKqrIjOue/Q==}
 
   '@shikijs/langs@3.9.0':
     resolution: {integrity: sha512-XANUVPauGJfMkebskmSGCT8TwfQPbMY+SFbRY8gyMwY3NY95jjqTg1JlplkwaccoSAEAe5BLtwz0jDp1kg5Jbg==}
 
+  '@shikijs/themes@3.10.0':
+    resolution: {integrity: sha512-JDnZKjYs4nhBniOmVILfEFZCA9JxxLnxG4PRQQQudn8DREhoWQelw7fhv+3Up8phzkoZWQ9TW2jp9k+6DjJS5A==}
+
   '@shikijs/themes@3.9.0':
     resolution: {integrity: sha512-p6UssgDp9moDhkp32Uog/r5XKCGfCm8NfSvunD0tfweetxmCUs525qj0koXq3ldfUGzlMdHooophlw2CtOifew==}
+
+  '@shikijs/types@3.10.0':
+    resolution: {integrity: sha512-PAeyajDDhdzefMiSZn7ENCwVaACMnO53+p5pSrJpIQOJTSX+4Qn28Y5e7I6v9wkJNyepRFfbZmzmbbnzjxBMEA==}
 
   '@shikijs/types@3.9.0':
     resolution: {integrity: sha512-jEl8FtchHsg/lM0DYJVL+3Ss7VhcmYsjVbsqIfB5Qyi/fWBIIrH54SlhN79phFLkGHKqpOA4uWDATjYuRa0JQQ==}
@@ -2823,8 +2847,8 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  less@4.4.0:
-    resolution: {integrity: sha512-kdTwsyRuncDfjEs0DlRILWNvxhDG/Zij4YLO4TMJgDLW+8OzpfkdPnRgrsRuY1o+oaxJGWsps5f/RVBgGmmN0w==}
+  less@4.4.1:
+    resolution: {integrity: sha512-X9HKyiXPi0f/ed0XhgUlBeFfxrlDP3xR4M7768Zl+WXLUViuL9AOPPJP4nCV0tgRWvTYvpNmN0SFhZOQzy16PA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3314,8 +3338,8 @@ packages:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
 
-  overlayscrollbars@2.11.4:
-    resolution: {integrity: sha512-GKYQo3OZ1QWnppNjQVv5hfpn+glYUxc6+ufW+ivdXUyLWFNc01XoH2Z36KGM4I8e5pXYeA3ElNItcXiLvmUhnQ==}
+  overlayscrollbars@2.11.5:
+    resolution: {integrity: sha512-vTUfCtjJbTjiarrxl9qdK04ZxlQdB4ugXfiqctVZytYDXH259OM4whROMGDE6T8uCYmSYPqiOFIKZ1erVkJnFg==}
 
   own-keys@1.0.1:
     resolution: {integrity: sha512-qFOyK5PjiWZd+QQIh+1jhdb9LpxTF0qs7Pm8o5QHYZ0M3vKqSqzsZaEB6oWlxZ+q2sJBMI/Ktgd2N5ZwQoRHfg==}
@@ -4033,6 +4057,9 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
+  shiki@3.10.0:
+    resolution: {integrity: sha512-GsfTvb8TkOhhg2wjiPLsQXgkv47aFrs3NUi5iRNU+PSniui3FT7XHNgyYgmvT8qQsXOL712NKX7NRlRFcoP9jA==}
+
   shiki@3.9.0:
     resolution: {integrity: sha512-GWLZ09MiwQ+c6y1w2nqKiuI1DeG2FbKordx4BA9v+jCb8lMWmR7BsBnyvCesWOeYiVIVtv98zeNq8T8QjNZE5g==}
 
@@ -4072,6 +4099,10 @@ packages:
 
   smol-toml@1.4.1:
     resolution: {integrity: sha512-CxdwHXyYTONGHThDbq5XdwbFsuY4wlClRGejfE2NtwUtiHYsP1QtNsHb/hnj31jKYSchztJsaA8pSQoVzkfCFg==}
+    engines: {node: '>= 18'}
+
+  smol-toml@1.4.2:
+    resolution: {integrity: sha512-rInDH6lCNiEyn3+hH8KVGFdbjc099j47+OSgbMrfDYX1CmXLfdKd7qi6IfcWj2wFxvSVkuI46M+wPGYfEOEj6g==}
     engines: {node: '>= 18'}
 
   smoothscroll@0.4.0:
@@ -4804,6 +4835,8 @@ snapshots:
 
   '@astrojs/internal-helpers@0.6.1': {}
 
+  '@astrojs/internal-helpers@0.7.2': {}
+
   '@astrojs/language-server@2.15.4(typescript@5.8.3)':
     dependencies:
       '@astrojs/compiler': 2.12.2
@@ -4853,12 +4886,38 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.1(astro@5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))':
+  '@astrojs/markdown-remark@6.3.6':
     dependencies:
-      '@astrojs/markdown-remark': 6.3.3
+      '@astrojs/internal-helpers': 0.7.2
+      '@astrojs/prism': 3.3.0
+      github-slugger: 2.0.0
+      hast-util-from-html: 2.0.3
+      hast-util-to-text: 4.0.2
+      import-meta-resolve: 4.1.0
+      js-yaml: 4.1.0
+      mdast-util-definitions: 6.0.0
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.2
+      remark-smartypants: 3.0.2
+      shiki: 3.10.0
+      smol-toml: 1.4.2
+      unified: 11.0.5
+      unist-util-remove-position: 5.0.0
+      unist-util-visit: 5.0.0
+      unist-util-visit-parents: 6.0.1
+      vfile: 6.0.3
+    transitivePeerDependencies:
+      - supports-color
+
+  '@astrojs/mdx@4.3.4(astro@5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))':
+    dependencies:
+      '@astrojs/markdown-remark': 6.3.6
       '@mdx-js/mdx': 3.1.0(acorn@8.15.0)
       acorn: 8.15.0
-      astro: 5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -5921,12 +5980,12 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@playform/compress@0.1.9(@types/node@24.1.0)(less@4.4.0)(rollup@2.79.2)(typescript@5.8.3)(yaml@2.8.0)':
+  '@playform/compress@0.1.9(@types/node@24.1.0)(less@4.4.1)(rollup@2.79.2)(typescript@5.8.3)(yaml@2.8.0)':
     dependencies:
       '@playform/pipe': 0.1.3
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0)
       commander: 13.1.0
       csso: 5.0.5
       deepmerge-ts: 7.1.5
@@ -6104,6 +6163,13 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.46.2':
     optional: true
 
+  '@shikijs/core@3.10.0':
+    dependencies:
+      '@shikijs/types': 3.10.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+      hast-util-to-html: 9.0.5
+
   '@shikijs/core@3.9.0':
     dependencies:
       '@shikijs/types': 3.9.0
@@ -6111,24 +6177,48 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.5
 
+  '@shikijs/engine-javascript@3.10.0':
+    dependencies:
+      '@shikijs/types': 3.10.0
+      '@shikijs/vscode-textmate': 10.0.2
+      oniguruma-to-es: 4.3.3
+
   '@shikijs/engine-javascript@3.9.0':
     dependencies:
       '@shikijs/types': 3.9.0
       '@shikijs/vscode-textmate': 10.0.2
       oniguruma-to-es: 4.3.3
 
+  '@shikijs/engine-oniguruma@3.10.0':
+    dependencies:
+      '@shikijs/types': 3.10.0
+      '@shikijs/vscode-textmate': 10.0.2
+
   '@shikijs/engine-oniguruma@3.9.0':
     dependencies:
       '@shikijs/types': 3.9.0
       '@shikijs/vscode-textmate': 10.0.2
 
+  '@shikijs/langs@3.10.0':
+    dependencies:
+      '@shikijs/types': 3.10.0
+
   '@shikijs/langs@3.9.0':
     dependencies:
       '@shikijs/types': 3.9.0
 
+  '@shikijs/themes@3.10.0':
+    dependencies:
+      '@shikijs/types': 3.10.0
+
   '@shikijs/themes@3.9.0':
     dependencies:
       '@shikijs/types': 3.9.0
+
+  '@shikijs/types@3.10.0':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
 
   '@shikijs/types@3.9.0':
     dependencies:
@@ -6570,7 +6660,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -6626,8 +6716,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.1
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.39.0)(yaml@2.8.0)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.39.0)(yaml@2.8.0)
+      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -6671,7 +6761,7 @@ snapshots:
       - uploadthing
       - yaml
 
-  astro@5.12.6(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.12.6(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(rollup@2.79.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -6727,8 +6817,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.1
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)
+      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -8261,7 +8351,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  less@4.4.0:
+  less@4.4.1:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
@@ -9068,7 +9158,7 @@ snapshots:
       type-check: 0.4.0
       word-wrap: 1.2.5
 
-  overlayscrollbars@2.11.4: {}
+  overlayscrollbars@2.11.5: {}
 
   own-keys@1.0.1:
     dependencies:
@@ -9920,6 +10010,17 @@ snapshots:
       interpret: 1.4.0
       rechoir: 0.6.2
 
+  shiki@3.10.0:
+    dependencies:
+      '@shikijs/core': 3.10.0
+      '@shikijs/engine-javascript': 3.10.0
+      '@shikijs/engine-oniguruma': 3.10.0
+      '@shikijs/langs': 3.10.0
+      '@shikijs/themes': 3.10.0
+      '@shikijs/types': 3.10.0
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.4
+
   shiki@3.9.0:
     dependencies:
       '@shikijs/core': 3.9.0
@@ -9977,6 +10078,8 @@ snapshots:
   smob@1.5.0: {}
 
   smol-toml@1.4.1: {}
+
+  smol-toml@1.4.2: {}
 
   smoothscroll@0.4.0: {}
 
@@ -10406,7 +10509,7 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  vite@6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.39.0)(yaml@2.8.0):
+  vite@6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.39.0)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -10417,12 +10520,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.1.0
       fsevents: 2.3.3
-      less: 4.4.0
+      less: 4.4.1
       lightningcss: 1.29.3
       terser: 5.39.0
       yaml: 2.8.0
 
-  vite@6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0):
+  vite@6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -10433,14 +10536,14 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.1.0
       fsevents: 2.3.3
-      less: 4.4.0
+      less: 4.4.1
       lightningcss: 1.29.3
       terser: 5.43.1
       yaml: 2.8.0
 
-  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)):
+  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)):
     optionalDependencies:
-      vite: 6.3.5(@types/node@24.1.0)(less@4.4.0)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(less@4.4.1)(lightningcss@1.29.3)(terser@5.43.1)(yaml@2.8.0)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.22):
     dependencies:
