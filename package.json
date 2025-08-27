@@ -12,7 +12,7 @@
     "ondev": "astro preferences enable devToolbar"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/mdx": "^4.3.4",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.0",
     "@swup/astro": "^1.6.0",
@@ -29,9 +29,9 @@
     "@types/nprogress": "^0.2.3",
     "@waline/client": "^3.6.0",
     "cheerio": "^1.0.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.14",
     "eslint": "^8.57.1",
-    "less": "^4.3.0",
+    "less": "^4.4.1",
     "mdast-util-to-string": "^4.0.0",
     "reading-time": "^1.5.0",
     "rehype-katex": "^7.0.1",
